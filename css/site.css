@@ -401,7 +401,7 @@ of those sections to manage the look and feel of the site. */
     background: #DDD;
     height: auto;
     padding-top: 60px;
-	padding-bottom: 20px;
+	padding-bottom: 0px;
     text-align: center;
 } 
 
@@ -412,15 +412,15 @@ of those sections to manage the look and feel of the site. */
 	margin-right: auto;
 }
 
-.modal.and.carousel {
-  /* position: absolute; */ // Needed because the carousel overrides the position property
-}
+/* .modal.and.carousel {
+  position: absolute;  Needed because the carousel overrides the position property
+} */
 
 
 @media(min-width:767px) {	
 	.about-section {
-		min-height: 70%;
-		padding: 70px 0;
+		height: auto;
+		padding-top: 70px;
 	}
 	
 	.about-section .thumbnail {
@@ -436,9 +436,9 @@ of those sections to manage the look and feel of the site. */
     padding-top: 60px;
 	padding-bottom: 0px;
     text-align: center;
-	background: linear-gradient(to bottom, rgba(221,221,221,0.8) 0%, rgba(200, 200, 200,0.8) 20%),
-				/* linear-gradient(to bottom, rgba(230,255,255,0.8) 100%, rgba(204,255,255,1) 100%), */
-				url(../images/store_front.jpg) no-repeat center scroll;
+	background: #DDD;
+	/* linear-gradient(to bottom, rgba(221,221,221,0.8) 0%, rgba(200, 200, 200,0.8) 20%),
+				url(../images/store_front.jpg) no-repeat center scroll; */
 	background-size: cover;
     /* background: #EEFFFF; */
 }  
@@ -457,8 +457,14 @@ of those sections to manage the look and feel of the site. */
 	display: inline-block;
 }
 
+.contact-section .contact-image {
+	background: url(../images/store_front.jpg) no-repeat center scroll;
+	background-size: cover;
+	height: 220px;
+}
+
 #map-canvas {
-	height: 240px;
+	height: 220px;
 }
 
 @media(min-width:767px) {
@@ -468,6 +474,10 @@ of those sections to manage the look and feel of the site. */
 		padding-bottom: 20px;
 	}
 
+	.contact-section .contact-top {
+		padding-bottom: 30px;
+	}
+	
 	.contact-section .details {
 		/* border-style: solid; */
 		/* position: relative; */
@@ -485,7 +495,15 @@ of those sections to manage the look and feel of the site. */
 		/* border-style: solid; */
 	}
 	
-	.contact-section .contact-body,
+	.contact-section .contact-image {
+		height: 300px
+	}
+	
+	.contact-section .contact-body {
+		height: 300px;
+		position: relative;
+	}
+	
 	#map-canvas {
 		height: 300px;
 		position: relative;

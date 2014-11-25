@@ -30,7 +30,7 @@
         <div class="container">
             <div class="navbar-header">
 				<!-- Minimized navigation icon and menu for small screens -->
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle McNav</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -43,7 +43,7 @@
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+            <div class="collapse navbar-collapse navbar-right">
                 <ul class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
@@ -128,35 +128,32 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about-section content-section text-center">
+    <section id="about" class="about-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>EVENTS</h1>					
-					
-					<div class="col-xs-18 col-sm-6 col-md-6">
-						<div href="#" class="thumbnail">
-							<a href="#lightbox" data-toggle="modal">
-								<img src="./images/events/07.11.14/event_cover.jpg" alt="Party!" width="300">
-							</a>
-							<div class="caption">
-								<h4>Opening Party - 07/11/2014</h4>
-								<p>Resident DJ's with friends, family and all who wish to check out my venture</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-18 col-sm-6 col-md-6">
-						<div class="thumbnail">
-							<img src="./images/store_inside.jpg" alt="Party!" height="500">
-							<div class="caption">
-								<h4>Like the space?</h4>
-								<p>Be in touch if you're interested hosting events here.</p>
-							</div>
-						</div>
-					</div>
-				
+                    <h1>EVENTS</h1>									
 				</div>
-				
+				<div class="col-sm-6">
+					<div class="thumbnail">
+						<a href="#demoLightbox" data-toggle="lightbox">
+							<img src="./images/events/07.11.14/event_cover.jpg" alt="Party!" width="300">
+						</a>
+						<div class="caption">
+							<h4>Opening Party - 07/11/2014</h4>
+							<p>Resident DJ's with friends, family and all who wish to check out my venture.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="thumbnail">
+						<img src="./images/store_inside.jpg" alt="Party!" height="500">
+						<div class="caption">
+							<h4>Like the space?</h4>
+							<p>Be in touch if you're interested hosting events here.</p>
+						</div>
+					</div>
+				</div>
             </div>
         </div>
     </section>
@@ -164,27 +161,36 @@
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="container">
-            <div class="row">
+            <div class="row contact-top">
                 <div class="col-lg-12">
                     <h1>SEE FOR YOURSELF</h1>
-                </div>
-				<div class="col-sm-3 contact-body details">
-					<div class="details-inner details-address">	
-						<p>65 Roman Road<br>Bethnal Green<br>E2 OQN<br>London<br>United Kingdom</p>
+				
+					<div class="col-sm-3 contact-body details">
+						<div class="details-inner details-address">	
+							<p>65 Roman Road<br>Bethnal Green<br>E2 OQN<br>London<br>United Kingdom</p>
+						</div>
+					</div>
+					
+					<div class="col-sm-6 contact-image">
+						<!-- <img class="contact-image" src="./images/store_front.jpg" alt="" >	 -->
+					</div>
+					
+					<div class="col-sm-3 contact-body details">
+						<div class="details-inner details-time">
+							<p>Open 7 days a week<br>7am til late (6pm+)</p><br>
+							<a href="https://www.facebook.com/thestorecoffee?ref=ts&fref=ts">
+								<image src="./images/icons/facebook_icon.png" height="40" width="40">
+							</a>		
+							<p>+44(0)7903569782<br>
+								<span class="wrap-email">antonpin</span>@outlook.com</p>
+							<!-- Friends and family -->
+						</div>
 					</div>
 				</div>
-				<div id="map-canvas" class="col-sm-6 contact-body"></div>
-				<div class="col-sm-3 contact-body details">
-					<div class="details-inner details-time">
-						<p>Open 7 days a week<br>7am til late (6pm+)</p><br>
-						<a href="https://www.facebook.com/thestorecoffee?ref=ts&fref=ts">
-							<image src="./images/icons/facebook_icon.png" height="40" width="40">
-						</a>		
-						<p>+44(0)7903569782<br>
-							<span class="wrap-email">antonpin</span>@outlook.com</p>
-						<!-- Friends and family -->
-					</div>
-				</div>
+			</div>
+			
+			<div class="row">
+				<div id="map-canvas" class="col-sm-12"></div>
             </div>
         </div>
     </section>
