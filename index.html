@@ -136,8 +136,8 @@
 				</div>
 				<div class="col-sm-6">
 					<div class="thumbnail">
-						<a href="#demoLightbox" data-toggle="lightbox">
-							<img src="./images/events/07.11.14/event_cover.jpg" alt="Party!" width="300">
+						<a title="Image 1" data-target="#about">
+							<img class="event-img" id="image-1" src="./images/events/07.11.14/event_cover.jpg" alt="Party!" width="300">
 						</a>
 						<div class="caption">
 							<h4>Opening Party - 07/11/2014</h4>
@@ -147,16 +147,64 @@
 				</div>
 				<div class="col-sm-6">
 					<div class="thumbnail">
-						<img src="./images/store_inside.jpg" alt="Party!" height="500">
+						<a data-targer="#about">
+							<img class="event-img img-responsive" id="image-2" src="./images/store_inside.jpg" alt="Party!" height="200">
+						</a>
 						<div class="caption">
 							<h4>Like the space?</h4>
 							<p>Be in touch if you're interested hosting events here.</p>
 						</div>
 					</div>
-				</div>
-            </div>
+				</div>				
+            </div>			
         </div>
     </section>
+	
+	<div class="modal fade" id="modal-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div id="modal-carousel" class="carousel">
+		   
+						<div class="carousel-inner">           
+						</div>
+					
+						<a class="carousel-control left" href="#modal-carousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+						<a class="carousel-control right" href="#modal-carousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+					
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="hidden" id="img-repo">
+		
+		<!-- #image-1 -->
+		<div class="item" id="image-1">
+			<img class="thumbnail img-responsive" title="Image 11" src="http://dummyimage.com/600x350/ccc/969696">
+		</div>
+		<div class="item" id="image-1">
+			<img class="thumbnail img-responsive" title="Image 12" src="http://dummyimage.com/600x600/ccc/969696">
+		</div>
+		<div class="item" id="image-1">
+			<img class="thumbnail img-responsive" title="Image 13" src="http://dummyimage.com/300x300/ccc/969696">
+		</div>
+	  
+		<!-- #image-2 -->
+		<div class="item" id="image-2">
+			<img class="thumbnail img-responsive" title="Image 21" src="http://dummyimage.com/600x350/2255EE/969696">
+		</div>
+		<div class="item" id="image-2">
+			<img class="thumbnail img-responsive" title="Image 21" src="http://dummyimage.com/600x600/2255EE/969696">
+		</div>
+		<div class="item" id="image-2">
+			<img class="thumbnail img-responsive" title="Image 23" src="http://dummyimage.com/300x300/2255EE/969696">
+		</div>        
+		
+	</div>
+
+
 	
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
@@ -172,7 +220,7 @@
 					</div>
 					
 					<div class="col-sm-6 contact-image">
-						<!-- <img class="contact-image" src="./images/store_front.jpg" alt="" >	 -->
+						<!-- <img class="contact-image img-responsive" src="./images/store_front.jpg" alt="" >	 -->
 					</div>
 					
 					<div class="col-sm-3 contact-body details">

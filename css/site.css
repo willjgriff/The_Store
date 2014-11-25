@@ -412,10 +412,7 @@ of those sections to manage the look and feel of the site. */
 	margin-right: auto;
 }
 
-/* .modal.and.carousel {
-  position: absolute;  Needed because the carousel overrides the position property
-} */
-
+body.modal-open { overflow:inherit; padding-right:inherit !important; }
 
 @media(min-width:767px) {	
 	.about-section {

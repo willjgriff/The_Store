@@ -15,6 +15,16 @@ $(document).ready(function() {
     }
 });
 
+// Closes the Responsive Menu on Menu Item Click
+$('.navbar-collapse ul li a').click(function() {
+    $('.navbar-toggle:visible').click();
+});
+
+// Closes the Responsive Menu on Home Click
+$('.navbar-brand').click(function() {
+    $('.navbar-collapse').collapse('hide');
+});
+
 //jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
@@ -37,11 +47,6 @@ $(function() {
         }, 1200, 'easeInOutExpo');
         event.preventDefault();
     });
-});
-
-// Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
-    $('.navbar-toggle:visible').click();
 });
 
 // Google Map
@@ -81,4 +86,34 @@ function initialize() {
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
+
+// Modal Carousel
+/* activate the carousel */
+$("#modal-carousel").carousel({interval:false});
+
+/* change modal title when slide changes */
+$("#modal-carousel").on("slid.bs.carousel", function () {
+  $(".modal-title").html($(this).find(".active img").attr("title"));
+})
+
+/* when clicking a thumbnail */
+$(".row .event-img").click(function(){
+    var content = $(".modal .carousel-inner");
+    var title = $(".modal-title");
+  
+    content.empty();  
+    title.empty();
+  
+  	var id = this.id;  
+    var repo = $("#img-repo .item");
+    var repoCopy = repo.filter("#" + id).clone();
+    var active = repoCopy.first();
+  
+    active.addClass("active");
+    title.html(active.find("img").attr("title"));
+  	content.append(repoCopy);
+
+    // show the modal
+  	$("#modal-gallery").modal("show");
+});
 
