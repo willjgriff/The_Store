@@ -1,0 +1,581 @@
+/*!
+ * Start Bootstrap - Scrolling Nav HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* ===========================
+--- Global jazz
+============================ */
+ 
+body {
+    width: 100%;
+    height: 100%;
+	font-size: 100%;
+    font-family: Abel, Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif; 
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 25px;
+    /* text-transform: uppercase; */
+    font-family: Abel, Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+p {
+    margin: 0 0 0;
+	font-family: Abel, Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif; 
+    font-size: 19px;
+    line-height: 1.5;
+	font-weight: 900;
+	/* text-transform: uppercase; */
+}
+
+/* @media(min-width:767px) {
+    p {
+        margin: 0 0 0;
+        font-size: 17px;
+        line-height: 1.6;
+    }
+} */
+
+@media(min-width:992px) {
+    p {
+        margin: 0 0 0;
+        font-size: 22px;
+        line-height: 1.4;
+    }
+}
+
+a {
+    color: #219ab3;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #11505d;
+}
+
+/* ===========================
+--- Navigation Bar Section
+============================ */
+
+/* Cream navbar theme
+	Mini navbar/scrolled navbar colour: rgba(232,192,152,1)
+	Link active/hover colour and toggle mini navbar button: rgba(255,220,180,1)
+	
+	Green navbar theme	
+	#99CC55
+	#BBDD77	
+*/
+
+.icon-bar {
+	background-color: #444;
+}
+
+.navbar-custom {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    /* font-family: Abel, Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;  */
+	font-size: 2em;
+	/* Mini navbar colour */
+    background-color: #cc8833;
+}
+
+.navbar-custom .navbar-brand {
+    font-weight: 600;
+	font-size: 1.2em;
+}
+
+/* .navbar-custom .brand-logo {
+	transition: all .4s ease-in-out;
+} */
+
+.navbar-custom .navbar-brand:focus {
+    outline: 0;
+}
+
+.navbar-custom a {
+	/* Text font colour */
+    color: #222;
+}
+
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.navbar-custom .navbar-toggle,
+/* Use above selector to change mini navbar button */
+.navbar-custom .nav li.active,
+/* Use above selector to change just main navbar hover colour; */
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a.active {
+    outline: 0;
+	/* Navbar individual link hover colour */
+    background-color: #d0a050;
+}
+
+/* Navbar links background colour */
+/* .nav.navbar-nav {
+    background-color: rgba(153,204,85,0.7);
+}  */
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 15px 0;
+        border-bottom: 0;
+        letter-spacing: 2px;
+		/* Main top bar colour including transparency Def: 0.7*/
+        background: rgba(153,204,85,0);
+        -webkit-transition: background .25s ease-in-out,padding .25s ease-in-out;
+        -moz-transition: background .25s ease-in-out,padding .25s ease-in-out;
+        transition: background .25s ease-in-out,padding .25s ease-in-out;
+    }
+
+	.navbar-custom a {
+		/* Text font colour */
+		color: #FFF;
+	}
+	
+	.navbar-custom  img {
+		-webkit-filter: invert(100%);
+	}
+	
+	.navbar-custom .nav li a:hover,
+	.navbar-custom .nav li a:focus,
+	.navbar-custom .nav li a.active {
+		background-color: #b72;
+		transition: background .25s ease-in-out;
+	}
+	
+    .top-nav-collapse {
+        padding: 0;
+		/* Scrolled bar colour */
+        background-color: #cc8833;
+		color: #222
+    }
+	
+	.top-nav-collapse a {
+		color: #222;
+	}		
+	
+	.top-nav-collapse img {
+		-webkit-filter: invert(0%);
+	}
+
+	.top-nav-collapse .nav li a:hover,
+	.top-nav-collapse .nav li a:focus,
+	.top-nav-collapse .nav li a.active {
+		background-color: #d0a050;
+	}
+}
+
+/* ===========================
+--- General sections
+============================ */
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+of those sections to manage the look and feel of the site. */
+
+/* .intro-section {
+    padding-top: 150px;
+} */
+
+.intro {
+    display: table;
+    width: 100%;
+    padding: 100px 0;
+    color: #fff;
+    background: /* linear-gradient(to bottom, rgba(200, 200, 200,0.6) 100%, rgba(204,255,255,1) 100%), */
+			linear-gradient(to bottom, rgba(225,140,50,0.6) 100%, rgba(221,221,221,0.6) 0%),
+			/* url(../images/top_background.jpg) no-repeat center scroll; */
+			url(../images/store_inside2.jpg) no-repeat center scroll;
+    background-color: #fff;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+	-o-background-size: cover;
+    background-size: cover;
+}
+
+.intro .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.intro .text-background {
+	/* background: rgba(153,204,85,0.5); */
+	/* border-radius: 40px; */
+/* 	width: 30vw;
+    height: 25vw; */
+	/* border-style: solid; */
+	/* border-width: 5px; */
+}
+
+.intro .intro-body .brand-heading {
+    font-size: 4em;
+	font-weight: 600;
+	letter-spacing: 0.15em;
+}
+
+.intro .intro-body .intro-text {
+    font-size: 1.8em;
+}
+
+.intro .intro-arrow {
+	-webkit-filter: invert(100%);
+	filter: invert(100%);
+}
+
+.intro {
+    height: auto;
+    padding-top: 60px;
+	padding-bottom: 20px;
+    text-align: center;
+}
+
+@media(min-width:767px) {
+    .intro  {
+		height: 100%;
+	}
+	
+	.intro {
+        padding: 70px 0;
+    }
+
+    .intro .intro-body .brand-heading {
+        font-size: 100px;
+    }
+
+    .intro .intro-body .intro-text {
+        font-size: 25px;
+    }
+}
+
+/* ===========================
+--- Main section
+============================ */
+.main-section {
+    height: auto;
+    padding-top: 60px;
+	padding-bottom: 20px;
+    text-align: center;
+	background: #DDD;
+}
+
+.main-section .details {
+	padding-bottom: 15px;
+	/* background-color: #bbb; */
+	max-width:240px;
+	margin-right: auto;
+	margin-left: auto;
+	/* border-style: solid; */
+}
+
+@media(min-width:767px) {	
+ 	.main-section {
+		min-height: auto;
+		padding-top: 70px;
+		margin-top: 0px;
+    }
+	
+	.main-section .details {
+		position: relative;
+		/* border-style: solid; */
+		height: 281px;
+		max-width: 3000px;
+	}
+	
+	.main-section .details-inner {
+		padding: 0px;
+		position: absolute;               
+		top: 50%; 
+		left: 50%;
+		margin: 0px;
+		margin-right: -50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+.main-section .slider-image1 {
+	background: radial-gradient(rgba(200, 200, 200,0.2) 100%, rgba(200, 200, 200, 0.3) 100%),
+				url(../images/carousel/food1.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.main-section .slider-image2 {
+	background: radial-gradient(rgba(230,255,255,0.1) 100%, rgba(204,255,255,0.7) 100%),
+				url(../images/carousel/food2.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.main-section .slider-image3 {
+	background: radial-gradient(rgba(230,255,255,0.1) 100%, rgba(204,255,255,0.7) 100%),
+				url(../images/carousel/food3.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.main-section .carousel-size {
+	max-width: 450px;
+	margin-left: auto;
+	margin-right: auto;
+	/* border: solid; */
+}
+
+.main-section .image-size {
+	height: 250px;
+	width: 100%;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+.carousel .carousel-control { 
+	opacity: 0;
+	visibility: hidden; 
+	transition: visibility 0s linear 0.3s, opacity 0.3s linear;
+}
+
+.carousel:hover .carousel-control { 
+	opacity: 1;
+	visibility: visible; 
+	transition-delay: 0s;
+}
+
+.main-section  .chevron-image {
+	-webkit-filter: invert(0%);
+	width: 17px;
+}
+
+.main-section .carousel-dots {
+	-webkit-filter: invert(100%);
+	opacity: 0.7;
+}
+
+@media(min-width:767px) {
+	.main-section .carousel-size {
+		max-width: 3000px;
+	}
+
+	.main-section .image-size {
+		height: 281px;
+		width: 100%;
+	}
+}
+@media(min-width:992px) {
+	.main-section .details,
+	.main-section .image-size {
+		height: 300px;
+	}
+}
+@media(min-width:1200px) {
+	.main-section .details,
+	.main-section .image-size {
+		height: 340px;
+	}
+}
+
+/* ===========================
+--- About section
+============================ */
+.about-section {
+    background: #DDD;
+    height: auto;
+    padding-top: 60px;
+	padding-bottom: 20px;
+    text-align: center;
+} 
+
+.about-section .thumbnail {
+	background-color: #bbb;
+	max-width: 450px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.modal.and.carousel {
+  /* position: absolute; */ // Needed because the carousel overrides the position property
+}
+
+
+@media(min-width:767px) {	
+	.about-section {
+		min-height: 70%;
+		padding: 70px 0;
+	}
+	
+	.about-section .thumbnail {
+		max-width: 3000px;
+	}
+}
+
+/* ===========================
+--- Contact section
+============================ */
+.contact-section {
+	height: auto;
+    padding-top: 60px;
+	padding-bottom: 0px;
+    text-align: center;
+	background: linear-gradient(to bottom, rgba(221,221,221,0.8) 0%, rgba(200, 200, 200,0.8) 20%),
+				/* linear-gradient(to bottom, rgba(230,255,255,0.8) 100%, rgba(204,255,255,1) 100%), */
+				url(../images/store_front.jpg) no-repeat center scroll;
+	background-size: cover;
+    /* background: #EEFFFF; */
+}  
+
+.contact-section .details-address {
+		padding-bottom: 20px;
+		/* border-style: solid; */
+}
+
+.contact-section .details-time {
+		padding: 20px;
+		/* border-style: solid; */
+}
+	
+.contact-section .wrap-email {
+	display: inline-block;
+}
+
+#map-canvas {
+	height: 240px;
+}
+
+@media(min-width:767px) {
+	.contact-section{
+		height: auto;
+		padding-top: 70px;
+		padding-bottom: 20px;
+	}
+
+	.contact-section .details {
+		/* border-style: solid; */
+		/* position: relative; */
+	}
+	
+	.contact-section .details-inner {
+		padding: 0px;
+		position: absolute;               
+		top: 50%; 
+		left: 50%;
+		margin: 5px;
+		margin-right: -50%;
+		transform: translate(-50%, -50%);
+		
+		/* border-style: solid; */
+	}
+	
+	.contact-section .contact-body,
+	#map-canvas {
+		height: 300px;
+		position: relative;
+	}
+}
+
+
+
+
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid #fff;
+    border-radius: 35px;
+    font-size: 40px;
+    color: #fff;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.btn-circle:hover,
+.btn-circle:focus {
+    outline: 0;
+    color: #fff;
+    background: rgba(255,255,255,.1);
+}
+
+.btn-circle i.animated {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+}
+
+.btn-circle:hover i.animated {
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+}
+
+@-webkit-keyframes pulse {    
+    0 {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes pulse {    
+    0 {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -moz-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+footer {
+	padding: 20px 0;
+	font-size: 1.3em;
+	background-color: #DDD;
+}
+
+footer p {
+	margin: 0;
+	font-size: 1em;
+}
