@@ -6,55 +6,50 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<!-- Core Bootstrap library -->
+	<!-- Bootstrap CSS -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	
 	<!-- Custom CSS -->
-	<link rel="stylesheet" href="css/site.css">
+	<link href="css/site.css" rel="stylesheet" type="text/css">
 	
-	<!-- Custom Fonts -->
-	<link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<!-- Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Abel|Marvel' rel='stylesheet' type='text/css'>
+	
+	<!-- Glyphicons -->
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	
 	<!-- Favicon -->
 	<link href="favicon.ico" rel="icon" type="image/x-icon" />
 	
   </head>
-
   <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
   
     <!-- Navigation -->
     <nav class="navbar navbar-fixed-top navbar-custom" role="navigation">
         <div class="container">
             <div class="navbar-header">
-				<!-- Minimized navigation icon and menu for small screens -->
+
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle McNav</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
                 </button>
+				
                 <a class="navbar-brand page-scroll" href="#page-top">
-					<!-- <img alt="Beans!" class="brand-logo" src="./images/icons/coffee_beans.png" height="26" width="26"> -->
 					The Store
 				</a>
             </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
+			
             <div class="collapse navbar-collapse navbar-right">
                 <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
-                    <li><a class="page-scroll nav-links" href="#main">About</a></li>
-                    <li><a class="page-scroll nav-links" href="#about">Events</a></li>
+                    <li><a class="page-scroll nav-links" href="#about">About</a></li>
+                    <li><a class="page-scroll nav-links" href="#events">Events</a></li>
                     <li><a class="page-scroll nav-links" href="#contact">Find Us</a></li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
     </nav>  
 	
 	<!-- Intro Section -->    
@@ -62,48 +57,50 @@
 			<div class="intro-body">
 				<div class="container">
 					<div class="row">
+					
 						<div class="col-sm-6 col-sm-offset-3">
 							<div class="text-background">
 								<h1 class="brand-heading">THE<br>STORE</h1>      
 								<p class="intro-text">65 ROMAN ROAD</p>   						
 							</div>
-							<a class="btn btn-circle page-scroll" href="#main">
+							
+							<a class="btn btn-circle page-scroll" href="#about">
 								<i class="fa fa-angle-double-down animated"></i>
 							</a>
 						</div>
+						
 					</div>
 				</div>
 			</div>
     </header>
 		
-	<!-- Main Section -->
-    <section id="main" class="main-section">
+	<!-- About Section -->
+    <section id="about" class="about-section">
         <div class="container">
             <div class="row">	
+			
                 <div class="col-lg-12">
                     <h1>ABOUT</h1>
                 </div>
+				
 				<div class="col-md-5 col-sm-4 details">
 					<div class="details-inner">
 						<p>Pastries, fruit, sandwiches. What food do we serve.<br>Monmouth. What coffee do we serve. From where?<br>Suggest the general ethos, musical, art, relaxed.</p>
 					</div>
 				</div>
+				
 				<div class="col-md-7 col-sm-8">
 					<div id="food-carousel" class="carousel slide carousel-size" data-ride="carousel">
-						<!-- Indicators -->
+					
 						<ol class="carousel-indicators carousel-dots">
 							<li data-target="#food-carousel" data-slide-to="0" class="active"></li>
 							<li data-target="#food-carousel" data-slide-to="1"></li>
 							<li data-target="#food-carousel" data-slide-to="2"></li>
 						</ol>
 
-						 <!-- Wrapper for slides -->
 						<div class="carousel-inner">
 							<div class="item active">
 								<div class="slider-image1 image-size"></div>
-<!-- 							<div class="carousel-caption">
-									<h3>Food to be</h3>
-								</div> -->
 							</div>
 							<div class="item">
 								<div class="slider-image2 image-size"></div>
@@ -113,30 +110,31 @@
 							</div>
 						</div>
 
-						<!-- Controls -->
 						<a class="left carousel-control" href="#food-carousel" role="button" data-slide="prev">
-							<!-- <span class="glyphicon glyphicon-chevron-left"></span> -->
 							<img class="icon-prev chevron-image" src="./images/icons/chevron_left.png"></img>
 						</a>
 						<a class="right carousel-control" href="#food-carousel" role="button" data-slide="next">
 							<img class="icon-next chevron-image" src="./images/icons/chevron_right.png"></img>
 						</a>
-					</div> <!-- Carousel -->
+						
+					</div>
 				</div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
+    <!-- Events Section -->
+    <section id="events" class="events-section">
         <div class="container">
             <div class="row">
+			
                 <div class="col-lg-12">
                     <h1>EVENTS</h1>									
 				</div>
+				
 				<div class="col-sm-6">
 					<div class="thumbnail">
-						<a title="Image 1" data-target="#about">
+						<a data-target="#events">
 							<img class="event-img" id="image-1" src="./images/events/07.11.14/event_cover.jpg" alt="Party!" width="300">
 						</a>
 						<div class="caption">
@@ -145,21 +143,24 @@
 						</div>
 					</div>
 				</div>
+				
 				<div class="col-sm-6">
 					<div class="thumbnail">
-						<a data-targer="#about">
-							<img class="event-img img-responsive" id="image-2" src="./images/store_inside.jpg" alt="Party!" height="200">
+						<a data-targer="#events">
+							<img class="event-img img-responsive" id="image-2" src="./images/events/expose/store_inside.jpg" alt="Party!" height="200">
 						</a>
 						<div class="caption">
 							<h4>Like the space?</h4>
 							<p>Be in touch if you're interested hosting events here.</p>
 						</div>
 					</div>
-				</div>				
+				</div>
+				
             </div>			
         </div>
     </section>
 	
+	<!-- Events Modal -->
 	<div class="modal fade" id="modal-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -169,8 +170,12 @@
 						<div class="carousel-inner">           
 						</div>
 					
-						<a class="carousel-control left" href="#modal-carousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-						<a class="carousel-control right" href="#modal-carousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+						<a class="carousel-control left" href="#modal-carousel" data-slide="prev">
+							<img class="icon-prev chevron-image" src="./images/icons/chevron_left.png"></img>
+						</a>
+						<a class="carousel-control right" href="#modal-carousel" data-slide="next">
+							<img class="icon-next chevron-image" src="./images/icons/chevron_right.png"></img>
+						</a>
 					
 					</div>
 				</div>
@@ -178,33 +183,26 @@
 		</div>
 	</div>
 	
+	<!-- Events Modal Images -->
 	<div class="hidden" id="img-repo">
 		
 		<!-- #image-1 -->
 		<div class="item" id="image-1">
-			<img class="thumbnail img-responsive" title="Image 11" src="http://dummyimage.com/600x350/ccc/969696">
+			<img class="thumbnail img-responsive modal-image" title="Image 11" src="./images/events/07.11.14/event_cover.jpg">
 		</div>
 		<div class="item" id="image-1">
-			<img class="thumbnail img-responsive" title="Image 12" src="http://dummyimage.com/600x600/ccc/969696">
+			<img class="thumbnail img-responsive modal-image" title="Image 12" src="./images/events/07.11.14/event1.jpg">
 		</div>
 		<div class="item" id="image-1">
-			<img class="thumbnail img-responsive" title="Image 13" src="http://dummyimage.com/300x300/ccc/969696">
+			<img class="thumbnail img-responsive modal-image" title="Image 13" src="./images/events/07.11.14/event2.jpg">
 		</div>
 	  
 		<!-- #image-2 -->
 		<div class="item" id="image-2">
-			<img class="thumbnail img-responsive" title="Image 21" src="http://dummyimage.com/600x350/2255EE/969696">
-		</div>
-		<div class="item" id="image-2">
-			<img class="thumbnail img-responsive" title="Image 21" src="http://dummyimage.com/600x600/2255EE/969696">
-		</div>
-		<div class="item" id="image-2">
-			<img class="thumbnail img-responsive" title="Image 23" src="http://dummyimage.com/300x300/2255EE/969696">
-		</div>        
+			<img class="thumbnail img-responsive modal-image" title="Image 21" src="./images/events/expose/store_inside.jpg">
+		</div>      
 		
 	</div>
-
-
 	
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
@@ -219,21 +217,24 @@
 						</div>
 					</div>
 					
-					<div class="col-sm-6 contact-image">
-						<!-- <img class="contact-image img-responsive" src="./images/store_front.jpg" alt="" >	 -->
-					</div>
+					<div class="col-sm-6 contact-image"></div>
 					
 					<div class="col-sm-3 contact-body details">
 						<div class="details-inner details-time">
+						
 							<p>Open 7 days a week<br>7am til late (6pm+)</p><br>
 							<a href="https://www.facebook.com/thestorecoffee?ref=ts&fref=ts">
 								<image src="./images/icons/facebook_icon.png" height="40" width="40">
-							</a>		
+							</a>	
+							
 							<p>+44(0)7903569782<br>
-								<span class="wrap-email">antonpin</span>@outlook.com</p>
-							<!-- Friends and family -->
+								<span class="wrap-email">antonpin</span>@outlook.com
+							</p>
+							<!-- Friends and family? Links to others pages? -->
+	
 						</div>
 					</div>
+					
 				</div>
 			</div>
 			
@@ -255,15 +256,16 @@
 		</div>
 	</footer>
 	
-	<!-- Imports and jazz -->
+	<!-- Jquery and Bootstrap Javascript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	
 	<!-- Google Maps API -->
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWXGSqkKGhnKGydt2VP0COn5owDKfIiCg&sensor=false"></script>
-	<!-- Scrolling Nav JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/scrolling-nav.js"></script>
 	
+	<!-- Local JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+	<script src="js/site.js"></script>	
 	
   </body>
 </html>
