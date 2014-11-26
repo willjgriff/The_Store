@@ -14,12 +14,22 @@ html {
 }
 
 h1,
-h2,
-h3,
+h2 {
+    margin: 0 0 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+h3 {
+    margin: 0 0 30px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
 h4,
 h5,
 h6 {
-    margin: 0 0 25px;
+    margin: 0 0 10px;
     font-weight: bold;
     letter-spacing: 1px;
 }
@@ -27,7 +37,7 @@ h6 {
 p {
     font-size: 19px;
     line-height: 1.5;
-	font-weight: bold;
+	font-weight: normal;
 }
 
 @media(min-width:992px) {
@@ -209,20 +219,25 @@ a:focus {
     padding-top: 60px;
 	padding-bottom: 20px;
     text-align: center;
-	background: #DDD;
+	background: #EEE;
 }
 
 .about-section .details {
 	padding-bottom: 15px;
-	max-width:240px;
 	margin-right: auto;
 	margin-left: auto;
+}
+
+.about-section .details h3 {
+	font-weight: bold;
+	margin: 0;
 }
 
 @media(min-width:767px) {	
  	.about-section {
 		min-height: auto;
 		padding-top: 70px;
+		padding-bottom: 60px;
 		margin-top: 0px;
     }
 	
@@ -275,15 +290,14 @@ a:focus {
 	width: 100%;
 }
 
-.carousel-control.left, .carousel-control.right {
+.carousel-control.left, 
+.carousel-control.right {
     background-image: none
 }
 
 .carousel .carousel-control { 
-	opacity: 0; 
-	filter: alpha(opacity=0);
-	visibility: hidden; 
-	transition: visibility 0s linear 0.3s, opacity 0.3s linear;
+	opacity: 1; 
+	filter: alpha(opacity=100);
 }
 
 .carousel:hover .carousel-control { 
@@ -294,17 +308,21 @@ a:focus {
 }
 
 .about-section  .chevron-image {
-	-webkit-filter: invert(0%);
+	-webkit-filter: invert(100%);
 	width: 17px;
 }
 
 .about-section .carousel-dots {
-	-webkit-filter: invert(100%);
 	opacity: 0.7;
 	filter: alpha(opacity=70);
 }
 
 @media(min-width:767px) {
+	.carousel .carousel-control { 
+		opacity: 0; 
+		filter: alpha(opacity=0);
+	}
+
 	.about-section .carousel-size {
 		max-width: 3000px;
 	}
@@ -361,6 +379,7 @@ a:focus {
 	.events-section {
 		height: auto;
 		padding-top: 70px;
+		padding-bottom: 60px;
 	}
 	
 	.events-section .thumbnail {
@@ -403,7 +422,7 @@ body.modal-open {
     padding-top: 60px;
 	padding-bottom: 0px;
     text-align: center;
-	background: #DDD;
+	background: #EEE;
 }  
 
 .contact-section .details-address {
