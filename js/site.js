@@ -109,13 +109,12 @@ $(".row .event-img").click(function(){
   	$("#modal-gallery").modal("show");
 });
 
-<script>
-  $(document).ready(function() {  
-  		 $("#food-carousel").swiperight(function() {  
-    		  $(this).carousel('prev');  
-	    		});  
-		   $("#food-carousel").swipeleft(function() {  
-		      $(this).carousel('next');  
-	   });  
+$(document).ready(function() {  
+	$("#food-carousel").swiperight(function() {  
+    	$(this).carousel('prev');  
 	});  
-</script>
+	$("#food-carousel").swipeleft(function() {  
+		$(this).carousel('next');  
+	});  
+});  
+
