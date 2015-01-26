@@ -1,6 +1,12 @@
 /* ===========================
 --- Global jazz
 ============================ */
+@font-face{
+    font-family: "isonorm3098";
+    src: url('../fonts/TGL31034-1.ttf'),
+    url('Thonburi-Bold.eot'); /* IE */
+}
+
 body {
     width: 100%;
     height: 100%;
@@ -17,13 +23,14 @@ h1,
 h2 {
     margin: 0 0 15px;
     font-weight: bold;
-    letter-spacing: 1px;
+    letter-spacing: 0.1em;
+	font-family: isonorm3098, Abel, Marvel,"Helvetica Neue",Arial,Helvetica,sans-serif;
 }
 
 h3 {
     margin: 0 0 30px;
     font-weight: normal;
-    letter-spacing: 1px;
+    letter-spacing: 0.05em;
 }
 
 h4,
@@ -48,14 +55,14 @@ p {
 }
 
 a {
-    color: #cc8833;
+    color: #663300;
     transition: all 0.25s ease-in-out;
 }
 
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #eb6;
+    color: #852;
 }
 
 /* ===========================
@@ -70,12 +77,13 @@ a:focus {
     text-transform: uppercase;
 	font-size: 2em;
 	/* Mini navbar colour */
-    background-color: #cc8833;
+    background-color: #663300;
+	font-family: isonorm3098, Abel, Marvel,"Helvetica Neue",Arial,Helvetica,sans-serif;
 }
 
 .navbar-custom .navbar-brand {
-    font-weight: 600;
 	font-size: 1.2em;
+	font-color: #fff;
 }
 
 .navbar-custom .navbar-brand:focus {
@@ -85,6 +93,8 @@ a:focus {
 .navbar-custom a {
 	/* Text font colour */
     color: #222;
+	letter-spacing: 0.2em;
+	font-weight: 600;
 }
 
 .navbar-custom .nav li a {
@@ -99,7 +109,7 @@ a:focus {
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a.active {
 	/* Navbar individual link hover colour */
-    background-color: #d0a050;
+    background-color: #852;
 }
 
 @media(min-width:767px) {
@@ -107,6 +117,7 @@ a:focus {
         padding: 15px 0;
         border-bottom: 0;
         letter-spacing: 2px;
+		padding-left: 2px;
 		/* Main top bar colour */
         background: rgba(0,0,0,0);
         transition: background .25s ease-in-out,padding .25s ease-in-out;
@@ -124,19 +135,19 @@ a:focus {
 	.navbar-custom .nav li a:hover,
 	.navbar-custom .nav li a:focus,
 	.navbar-custom .nav li a.active {
-		background-color: #b72;
+		background-color: #852;
 		transition: background .25s ease-in-out;
 	}
 	
     .top-nav-collapse {
         padding: 0;
 		/* Scrolled bar colour */
-        background-color: #cc8833;
+        background-color: #663300;
 		color: #222
     }
 	
 	.top-nav-collapse a {
-		color: #222;
+		color: #FFF;
 	}		
 	
 	.top-nav-collapse img {
@@ -146,7 +157,7 @@ a:focus {
 	.top-nav-collapse .nav li a:hover,
 	.top-nav-collapse .nav li a:focus,
 	.top-nav-collapse .nav li a.active {
-		background-color: #d0a050;
+		background-color: #852;
 	}
 }
 
@@ -158,10 +169,13 @@ a:focus {
     width: 100%;
     padding: 100px 0;
     color: #fff;
-    background:	linear-gradient(to bottom, rgba(225,140,50,0.6) 100%, rgba(221,221,221,0.6) 0%),
+    background:	linear-gradient(to bottom, rgba(50,50,50,0.6) 100%, rgba(221,221,221,0.6) 0%),
+	/* linear-gradient(to bottom, rgba(225,225,225,0.6) 100%, rgba(221,221,221,0.6) 0%), */
+	/* linear-gradient(to bottom, rgba(225,140,50,0.6) 100%, rgba(221,221,221,0.6) 0%), */
 				url(../images/store_inside2.jpg) no-repeat center scroll;
     background-color: #fff;
- background-size: cover;
+	background-size: cover;
+	font-family: isonorm3098;
 }
 
 .intro .intro-body {
@@ -171,12 +185,19 @@ a:focus {
 
 .intro .intro-body .brand-heading {
     font-size: 4em;
-	font-weight: 600;
+	font-weight: bold;
 	letter-spacing: 0.15em;
+	padding-left: 0.15em;
 }
 
 .intro .intro-body .intro-text {
     font-size: 1.8em;
+}
+
+
+.intro .text-background {
+	border-style: solid;
+	border-width: 5px;
 }
 
 .intro .intro-arrow {
@@ -219,7 +240,7 @@ a:focus {
     padding-top: 60px;
 	padding-bottom: 20px;
     text-align: center;
-	background: #EEE;
+	background: #FFF;
 }
 
 .about-section .details {
@@ -301,10 +322,10 @@ a:focus {
 }
 
 .carousel:hover .carousel-control { 
-	opacity: 1; 
+	/* opacity: 1; 
 	filter: alpha(opacity=100);
 	visibility: visible; 
-	transition-delay: 0s;
+	transition-delay: 0s; */
 }
 
 .about-section  .chevron-image {
@@ -319,8 +340,8 @@ a:focus {
 
 @media(min-width:767px) {
 	.carousel .carousel-control { 
-		opacity: 0; 
-		filter: alpha(opacity=0);
+/* 		opacity: 0; 
+		filter: alpha(opacity=0); */
 	}
 
 	.about-section .carousel-size {
@@ -349,7 +370,7 @@ a:focus {
 --- Events section
 ============================ */
 .events-section {
-    background: #DDD;
+    background: #EEE;
     height: auto;
     padding-top: 60px;
 	padding-bottom: 0px;
@@ -357,22 +378,26 @@ a:focus {
 } 
 
 .events-section .thumbnail {
-	background-color: #bbb;
+	/* border: solid; */
+	background-color: #CCC;
 	max-width: 450px;
 	margin-left: auto;
-	margin-right: auto;
+	margin-right: auto;	
+}
+
+.events-section .thumbnail:hover {
+	cursor: pointer;
+	cursor: hand;	
 }
 
 .events-section .event-img {
-	opacity: 0.9;
-	filter: alpha(opacity=90);
+	opacity: 0.7;
+	filter: alpha(opacity=70);
 }
 
 .events-section .event-img:hover {
-	opacity: 0.7;
-	filter: alpha(opacity=70);
-	cursor: pointer;
-	cursor: hand;
+	opacity: 0.9;
+	filter: alpha(opacity=9);
 }
 
 @media(min-width:767px) {	
@@ -422,15 +447,15 @@ body.modal-open {
     padding-top: 60px;
 	padding-bottom: 0px;
     text-align: center;
-	background: #EEE;
+	background: #FFF;
 }  
 
 .contact-section .details-address {
-	padding-bottom: 20px;
+	/* padding-bottom: 20px; */
 }
 
 .contact-section .details-time {
-	padding: 20px;
+	/* padding: 20px; */
 }
 	
 .contact-section .wrap-email {
@@ -452,10 +477,6 @@ body.modal-open {
 	.contact-section{
 		height: auto;
 		padding-top: 70px;
-		padding-bottom: 20px;
-	}
-
-	.contact-section .contact-top {
 		padding-bottom: 30px;
 	}
 	
@@ -549,7 +570,7 @@ body.modal-open {
 footer {
 	padding: 20px 0;
 	font-size: 1.3em;
-	background-color: #DDD;
+	background-color: #EEE;
 }
 
 footer p {

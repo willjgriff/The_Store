@@ -90,7 +90,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 // Modal Carousel
 $("#modal-carousel").carousel({interval:false});
 
-$(".row .event-img").click(function(){
+$(".events-section .thumbnail").click(function(){
     var content = $(".modal .carousel-inner");
     var title = $(".modal-title");
   
@@ -108,13 +108,4 @@ $(".row .event-img").click(function(){
 
   	$("#modal-gallery").modal("show");
 });
-
-$(document).ready(function() {  
-	$("#food-carousel").swiperight(function() {  
-    	$(this).carousel('prev');  
-	});  
-	$("#food-carousel").swipeleft(function() {  
-		$(this).carousel('next');  
-	});  
-});  
 
